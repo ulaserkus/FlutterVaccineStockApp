@@ -110,8 +110,9 @@ showModal(context) async {
                                                     23, 162, 184, 1),
                                                 padding: EdgeInsets.all(20)),
                                             onPressed: () {
-                                              setState(() =>
-                                                  showMinistaryModal(context));
+                                              setState(() {
+                                                showMinistaryModal(context);
+                                              });
                                             },
                                             child: Text("Bakanlık")),
                                       ),
@@ -123,8 +124,9 @@ showModal(context) async {
                                                     23, 162, 184, 1),
                                                 padding: EdgeInsets.all(20)),
                                             onPressed: () {
-                                              setState(() =>
-                                                  showProducerModal(context));
+                                              setState(() {
+                                                showProducerModal(context);
+                                              });
                                             },
                                             child: Text("Üretici")),
                                       )
