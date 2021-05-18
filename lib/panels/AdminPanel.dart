@@ -2830,7 +2830,8 @@ class AdminPanelState extends State<AdminPanel> {
                                     child: TextFormField(
                                       style: TextStyle(fontSize: 20),
                                       decoration: InputDecoration(
-                                          border: InputBorder.none),
+                                          border: InputBorder.none,
+                                          hintText: 'Miktarı giriniz'),
                                       controller: vaccineCount,
                                       validator: (value) {
                                         Pattern pattern = r'^[0-9]*$';

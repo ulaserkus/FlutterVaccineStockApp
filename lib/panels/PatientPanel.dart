@@ -792,6 +792,9 @@ class PatientPanelState extends State<PatientPanel> {
                                         onTap: () {
                                           DatePicker.showDateTimePicker(context,
                                               showTitleActions: true,
+                                              theme: DatePickerTheme(
+                                                  backgroundColor:
+                                                      Colors.white),
                                               minTime:
                                                   DateTime(2021, 5, 5, 01, 00),
                                               maxTime:

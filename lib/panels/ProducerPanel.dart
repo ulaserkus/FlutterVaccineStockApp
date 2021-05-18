@@ -56,7 +56,9 @@ class ProducerPanelState extends State<ProducerPanel> {
     claims = await ProducerData.getClaimsByProducerId(this.producerId);
     stocks = await ProducerData.getStocksByProducerId(this.producerId);
     ministaries = await ProducerData.getMinistaryList(this.producerId);
+
     selectedMinistary = ministaries.first;
+
     selectedClaims = this
         .claims
         .where((element) => element.ministaryId == selectedMinistary.id)
