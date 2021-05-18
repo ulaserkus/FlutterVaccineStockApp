@@ -56,7 +56,7 @@ class PatientPanelState extends State<PatientPanel> {
     doctors = await PatientData.getDoctorsByMinistaryId(patient.ministaryId);
     phaseList = await PatientData.getPhaseStateByPatientId(patientId);
 
-    selectedDoctor = doctors.first;
+    if (doctors.isNotEmpty) selectedDoctor = doctors.first;
 
     if (this.patient.hasCronicPatient && this.patient.patientAge >= 50) {
       this.priority = 1;

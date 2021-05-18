@@ -81,8 +81,10 @@ class AdminPanelState extends State<AdminPanel> {
     notRegisteredList = new List.from(notRegisteredUnitList)
       ..addAll(notRegisteredDoctorList);
 
-    selectedUser = notRegisteredList.first;
-    selectedProducer = notAddedProducerList.first;
+    if (notRegisteredList.isNotEmpty) selectedUser = notRegisteredList.first;
+
+    if (notAddedProducerList.isNotEmpty)
+      selectedProducer = notAddedProducerList.first;
 
     userList = doctorUserList + unitUserList;
 
